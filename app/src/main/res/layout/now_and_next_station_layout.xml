@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/nowandnextstationlayout"
+    android:background="@drawable/startbackgroundimg"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="@dimen/cardview_compat_inset_shadow">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="#D54733"
+                    android:layout_margin="3dp"
+                    android:padding="4dp"
+                    android:textColor="#FFF"
+                    android:text="현재정류장"
+                    android:fontFamily="@font/lobster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_margin="3dp"
+                    android:fontFamily="@font/lobster"
+                    android:background="#0E5D9E"
+                    android:padding="4dp"
+                    android:textColor="#FFF"
+                    android:text="다음정류장"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="3dp"
+                    android:id="@+id/nowstation"
+                    android:padding="4dp"
+                    android:text="현재정류장"
+                    android:fontFamily="@font/lobster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_margin="3dp"
+                    android:id="@+id/nextstation"
+                    android:fontFamily="@font/lobster"
+                    android:text="다음정류장"
+                    android:padding="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_margin="3dp"
+            android:id="@+id/count"
+            android:textColor="#D54733"
+            android:text="목적지 까지 0 정거장전"
+            android:fontFamily="@font/lobster"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:id="@+id/timer"
+                android:textColor="#000"
+                android:text="갱신 0초전"
+                android:fontFamily="@font/lobster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/destinationstation"
+        android:fontFamily="@font/lobster"
+        android:text="목적지"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

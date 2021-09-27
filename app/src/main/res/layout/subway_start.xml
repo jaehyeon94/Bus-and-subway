@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/startbackgroundimg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="출발역 선택"
+        android:textSize="100px"
+        android:gravity="center"
+        android:background="#00ff0000"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="140px"
+        android:layout_marginBottom="285px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/edit_text_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="52dp"
+        android:text="" />
+    <Button
+        android:id="@+id/metro_1"
+        android:layout_width="230px"
+        android:layout_height="150px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginBottom="0dp"
+        android:text="1호선"
+        android:textSize="30px" />
+
+    <Button
+        android:id="@+id/metro_2"
+        android:layout_width="230px"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/metro_1"
+        android:layout_toRightOf="@+id/metro_1"
+        android:text="2호선"
+        android:textSize="30px" />
+
+    <Button
+        android:id="@+id/metro_3"
+        android:layout_width="230px"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/metro_2"
+        android:layout_toRightOf="@+id/metro_2"
+        android:text="3호선"
+        android:textSize="30px" />
+
+    <Button
+        android:id="@+id/metro_4"
+        android:layout_width="230px"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/metro_3"
+        android:layout_toRightOf="@+id/metro_3"
+        android:text="4호선"
+        android:textSize="30px" />
+</RelativeLayout>
